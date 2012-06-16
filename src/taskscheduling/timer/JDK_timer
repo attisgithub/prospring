@@ -1,0 +1,15 @@
+JDK timer:
+1.Three trigger type for timer: one-off,fixed-delay,fixed-rate
+2.How to implement JDK timer task: (key components: TimeTask, Timer)
+	1)	create a class implementing TimeTask
+	2)	use Timer to schedule the task
+3.How to use spring support for JDK Timer: 2 ways (key components: TimerTask, ScheduledTimerTask, MethodInvokingTimerTaskFactoryBean, TimerFactoryBean)
+	1)	Define a subclass for TimerTask and register it to spring bean definition file;
+		Define ScheduledTimerTask(or subclass of it) with TimeTask injected;
+		Define TimerFactoryBean with ScheduledTimerTasks injected.
+		Digest all the definition.
+	2)	Define your task object of any object type;
+		Define FactoryBean of type MethodInvokingTimerTaskFactoryBean, be sure to set targetObject, targetMethod, argument you want to invoke for the task;
+		Define ScheduledTimerTask(or subclass of it) with TimeTask injected;
+		Define TimerFactoryBean with ScheduledTimerTasks injected.
+		Digest all the definition.

@@ -1,0 +1,9 @@
+Quartz:
+1.How to implement Quartz:(key components: Job, JobDetail, Trigger, JobDataMap)
+2.JobExecutionContext merges the JobDataMap data from  both JobDetail and Trigger, when conflicting, JobDataMap on JobTrigger will overwrite that of JobDetail.
+3.Two kind of Trigger: SimpleTrigger is the JDK style trigger. And CronTrigger is a powerful trigger which almost fulfill all the tasks.
+4.HolidayCalendar support for fine tune the date based on the Scheduler explicitly.
+5.How to use spring support for Quartz: (key components: JobDetailBean, SimpleTriggerBean/CronTriggerBean, SchedulerFactroyBean)
+6.Persistent Job: not mentioned here.
+7.Separate the business logic from the Job/TimeTask class. A more acceptable mean is to use MethodInvoker*FactoryBean as your business logic wrapper.
+	

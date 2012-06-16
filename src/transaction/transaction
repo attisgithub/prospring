@@ -1,0 +1,10 @@
+transaction:
+1.Transaction implementation includes programmatic, declarative. Programmatic implementation involves 2 types.(TransactionTemplate and none TransactionTemplate);Declarative implementation involves 3 types.(TransactionProxyFactoryBean, AOP and XMLAOP)
+2.TransactionDefinition is the core definition interface for transaction.
+3.The impls for PlatformTransactionManager provides transaction support on certain platform, like JDBC, JTA.
+4.Isolation level, and propagation are key parameter to transaction configuration.
+5.TransactionProxyFactoryBean returns a proxy for target service object. The attributes value in it need use transaction Attributes expression. This way of doing transaction is not recommended. since for each service class we need define a transaction configure.
+6.Annotation AOP based transaction need you tag the @Transactional for the method level or class level. it need <tx:annotaion-driven/>(all the pointcut will use this transaction manager) and <aop:aspectj-autoproxy />(weave the transaction for the matched beans or methods) tags.This way on impl is not recommended, since it's boring to tag all annotation at method level. And if tag on class level, it will influence too much.
+7.XML AOP based transaction which is also the most recommended one. we don't interfere any codes but only to add spring configs. <aop:config/> <tx:advice/>. we need use pointcut expression to define the transaction affected level.
+8.JTA transactions is based on Application server. 
+9.

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/apache-common"/>
+	<classpathentry kind="lib" path="D:/archives/quartz-2.1.5/lib/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="D:/archives/quartz-2.1.5/lib/slf4j-log4j12-1.6.1.jar"/>
+	<classpathentry kind="lib" path="D:/archives/quartz-2.1.5/lib/log4j-1.2.16.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/spring-support-2.5.5"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/quartz-1.6.6"/>
+	<classpathentry kind="lib" path="D:/archives/commons-dbcp-1.4/commons-dbcp-1.4.jar"/>
+	<classpathentry kind="lib" path="D:/archives/commons-pool-1.6/commons-pool-1.6.jar"/>
+	<classpathentry kind="lib" path="D:/archives/mysql-connector-java-5.0.8/mysql-connector-java-5.0.8-bin.jar"/>
+	<classpathentry kind="lib" path="D:/archives/spring-framework-2.5.5/lib/aspectj/aspectjrt.jar"/>
+	<classpathentry kind="lib" path="D:/archives/spring-framework-2.5.5/lib/aspectj/aspectjweaver.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beansProjectDescription>
+	<version>1</version>
+	<pluginVersion><![CDATA[2.9.1.201203220057-RELEASE]]></pluginVersion>
+	<configSuffixes>
+		<configSuffix><![CDATA[xml]]></configSuffix>
+	</configSuffixes>
+	<enableImports><![CDATA[false]]></enableImports>
+	<configs>
+		<config>src/taskscheduling/timer/spring/timer-context.xml</config>
+		<config>src/taskscheduling/timer/spring/birthday-reminder.xml</config>
+		<config>src/taskscheduling/timer/spring/some-job.xml</config>
+		<config>src/taskscheduling/quartz/spring/quartz-simple.xml</config>
+		<config>src/taskscheduling/quartz/spring/quartz-cron.xml</config>
+		<config>src/transaction/bankservice/dao-context.xml</config>
+		<config>src/transaction/nontrans/context-ntx.xml</config>
+		<config>src/transaction/programmatic/context-ptx.xml</config>
+		<config>src/transaction/declare/context-dtx.xml</config>
+		<config>src/transaction/aop/context-aoptx.xml</config>
+		<config>src/transaction/xmlaop/context-xmlaoptx.xml</config>
+	</configs>
+	<configSets>
+	</configSets>
+</beansProjectDescription>
